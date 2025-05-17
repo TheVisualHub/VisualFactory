@@ -10,7 +10,7 @@ import time
 smooth_strategy = 1  # default: the manual smooth strategy
 
 
-# Determine windowIDs using selected strategy
+# 1 - create windowIDs using selected strategy
 def smooth_windows(session):
     """
     Determine smoothing window sizes for each model based on the selected strategy.
@@ -44,8 +44,7 @@ def smooth_windows(session):
 
     return windowIDs
 
-# the main script function
-windowIDs = smooth_windows(session)
+# 2 - apply the smooth function using windowIDs from the smooth_windows
 def smooth_models(session, windowIDs):
     """
     Apply smoothing to models in the session based on windowIDs mapping.
@@ -84,5 +83,10 @@ def smooth_models(session, windowIDs):
 
         session.logger.status(f"Smoothed model #{model_id}")
 
+# 3 - the main function which produces smoothing
+def run_smoothing(session):
+    windowIDs = smooth_windows(session)
+    smooth_models(session, windowIDs)
+
 # call the main function
-smooth_models(session, windowIDs)
+run_smoothing(session)
