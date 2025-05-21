@@ -1,12 +1,11 @@
-# Welcome to the Master Of Morphing (rev. 0.1 delta):
+# Welcome to the Master Of Morphing (rev. 0.2 delta):
 # The game-changing script for structure preparation for morphing with ChimeraX
 # last update (20/05): python functional workflow tested and works very well
 # (+) feel free to design your alternative strategies (+)
 # which should resolve problems if the reference and target have very different chain sets
 # Current version implements two different strategies 
 # to produce the both structures with the same chains
-# Created by Gleb Novikov. All Rights Reserved (c) 2025
-#
+# The VisualHub. All Rights Reserved (c) 2025
 import numpy as np
 from chimerax.core.commands import run
 
@@ -115,6 +114,22 @@ def delete_unmatched_chains(session):
     else:
         session.logger.info("No unmatched chains found.")
 
+def craft_morph(session, ref_model_id=1, target_model_id=2, frames=300):
+    """
+    Performs morphing between reference and target structures.
+
+    Parameters:
+        session: ChimeraX session object.
+        ref_model_id (int): ID of the reference model.
+        target_model_id (int): ID of the target model.
+        frames (int): Number of frames for the morph trajectory.
+    """
+    try:
+        run(session, f'morph #{ref_model_id},{target_model_id} frames {frames}')
+        session.logger.info(f"#{ref_model_id} is being morphed into #{target_model_id} in {frames} frames.")
+    except Exception as e:
+        session.logger.error(f"Ain't no morphing today. Sorry! {e}")
+
 # main function => ( .. I've only tested it once, so proceed at your own risk and embrace the unknown .. )
 def MasterOfMorphing(session, pdb1, pdb2):
 # def MasterOfMorphing(session, pdb1, pdb2, use_rmsd_strategy=True, rmsd_cutoff=5.0): #  an example with internal control only
@@ -129,6 +144,7 @@ def MasterOfMorphing(session, pdb1, pdb2):
     """
     load_models(session, pdb1, pdb2)
     prepare_structure(session, use_rmsd_strategy=use_rmsd_strategy, rmsd_cutoff=rmsd_cutoff)
+    craft_morph(session, ref_model_id=1, target_model_id=2)
 
 # Execute the main function (using the parameters defined outside):
 MasterOfMorphing(session, pdb1, pdb2)
