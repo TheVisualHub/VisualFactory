@@ -14,7 +14,7 @@ pdb1 = "5are" # reference
 pdb2 = "5ari" # target
 
 # Advanced options : which strategy to use for structure preparation ?
-use_rmsd_strategy = False # the chain-id by default (more safe by usually does not work for morphing)
+use_rmsd_strategy = False # the chain-id by default (more safe)
 rmsd_cutoff = 5 # (if True: cut-off for rmsd fitting)
 
 def load_models(session, pdb1_path, pdb2_path):
