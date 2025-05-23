@@ -1,5 +1,5 @@
 # This script performs smoothing on an ensemble of MD trajectories loaded in ChimeraX.
-# Last updated: 17/05/2025: added def smooth_windows to switch between two different smooth strategies
+# Last updated: 22/05/2025: added def smooth_windows to switch between two different smooth strategies
 # The smoothing algorithm is based on snapshot averaging, as proposed by the ChimeraX community, 
 # with the added flexibility to define different smoothing factors on the fly.
 # The current version can operate on any number of loaded trajectories, with individual smoothing factors
