@@ -1,18 +1,23 @@
+# UltimateSmoothMD3.py (rev 3.34 delta)
 # This script performs smoothing on an ensemble of MD trajectories loaded in ChimeraX.
-# Last updated: 22/05/2025: code optimization
-# The smoothing algorithm is based on snapshot averaging, as proposed by the ChimeraX community, 
-# with the added flexibility to define different smoothing factors on the fly.
-# The current version can operate on any number of loaded trajectories, with individual smoothing factors
-# defined in the dictionary windowIDs.
+# Last updated: 27/05/2025:
+# added adaptive strategy to calculate smoothing => smooth_strategy = 3 (activated by default)
+# as a bounded function of trajectory length, e.g. w = min(w_max, max(w_min, floor(N / scaling)))
+# This script can operate on any number of loaded trajectories, providing individual smoothing factors
+# The original smoothing approach based on snapshot averaging is introduced by ChimeraX developer team
+# The smooth computng strategies, script automatization and functional-based structure is designed and coded by Gleb Novikov
+# The Visual Hub, 2025 -- Exclusively for educational purposes --
 from chimerax.atomic import Structure
 import numpy
 import time
 
-# select manual (1) or automatic (2) strategy for computing the smooth factor
-smooth_strategy = 1  # default: the manual smooth strategy
+### ADVANCED OPTIONS: ###
+### Chose your smooth destiny ###
+# possibilities: it is manual (1), automatic (2) or adaptive (3) for computing smooth factors
+smooth_strategy = 3  # default: the adaptive smooth strategy (based on the trajectory length)
 
-
-# 1 - create windowIDs using selected strategy
+# 1 - define smooth factors using selected strategy for each trajectory
+# and hide them inside the windowIDs dictionary
 def smooth_windows(session):
     """
     Determine smoothing window sizes for each model based on the selected strategy.
@@ -20,6 +25,7 @@ def smooth_windows(session):
     Returns:
         dict: Mapping from model ID to smoothing window size.
     """
+    # 1st (manual) strategy - assign smooth factors to each trajectory
     if smooth_strategy == 1:
         session.logger.status(f"The manual smooth strategy is activated")
         time.sleep(1)
@@ -32,6 +38,8 @@ def smooth_windows(session):
             5: 10,
             6: 12,
         }
+
+    # 2nd (automatic) strategy - compute smooth factor based on the trajectory ID
     elif smooth_strategy == 2:
         session.logger.status(f"The automatic smooth strategy is activated")
         time.sleep(1)
@@ -41,8 +49,44 @@ def smooth_windows(session):
             m.id[0]: m.id[0] * 2
             for m in session.models.list(type=Structure)
         }
+
+    # 3rd (adaptive) strategy - compute smooth factor based on the trajectory properties
+    # for a simplicity we take into account number of snapshots in each MD trajectory
+    # NB: more complex things will be unveiled in the 4th (secret) strategy
+    elif smooth_strategy == 3:
+        session.logger.status("The adaptive snapshot-count-based smooth strategy is activated")
+        time.sleep(1)
+
+        def compute_smooth_factor(n_snapshots):
+            # The smoothing window is computed as a bounded function of trajectory length:
+            # w = min(w_max, max(w_min, floor(N / scaling)))
+            # where N is the number of snapshots. This ensures that:
+            # - smoothing increases with trajectory length (scaling behavior)
+            # - remains within [w_min, w_max] bounds (bounded convergence)
+            # As N goes to the infinity, the window size approaches w_max, exhibiting asymptotic saturation.
+            # HERE is an imperical formula with used variables:
+            min_smooth = 3 # min windows size
+            max_smooth = 9 # max windows size
+            frame_scaling_factor = 1000 # can be adapted depending on your trajectories
+            return max(min_smooth, min(int(n_snapshots / frame_scaling_factor), max_smooth))
+
+        windowIDs = {}
+        for m in session.models.list(type=Structure):
+            n_frames = 1  # default fallback
+            try:
+                if hasattr(m, 'coordset_ids') and m.coordset_ids is not None:
+                    n_frames = len(list(m.coordset_ids))
+                elif hasattr(m, 'coordsets') and m.coordsets is not None:
+                    n_frames = len(list(m.coordsets))
+            except Exception as e:
+                session.logger.warning(f"Failed to detect frames for model {m.id[0]}: {e}")
+
+            session.logger.info(f"Model ID {m.id[0]} has {n_frames} frames")
+            windowIDs[m.id[0]] = compute_smooth_factor(n_frames)
+
+
     else:
-        raise ValueError("Invalid smooth strategy selected. Choose 1 (manual) or 2 (automatic).")
+            raise ValueError("Invalid smooth strategy selected. Choose 1 (manual), 2 (automatic) or 3 (adaptive).")
 
     return windowIDs
 
