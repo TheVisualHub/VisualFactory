@@ -5,7 +5,7 @@
 # as a bounded function of trajectory length, e.g. w = min(w_max, max(w_min, floor(N / scaling)))
 # This script can operate on any number of loaded trajectories, providing individual smoothing factors
 # The original smoothing approach based on snapshot averaging is introduced by ChimeraX developer team
-# The smooth computng strategies, script automatization and functional-based structure is designed and coded by Gleb Novikov
+# The smooth computng strategies and functional-based structure is designed and coded by Gleb Novikov
 # The Visual Hub, 2025 -- Exclusively for educational purposes --
 from chimerax.atomic import Structure
 import numpy
