@@ -3,7 +3,8 @@
 # Conceptualized, coded and benchmarked by Gleb Novikov
 # This script run ChimeraX as a subprocess with a hidden script contained secret visual options
 # The author does not promote extensive ussage of hidden visual subprocesses during the office hours
-# The Visual Hub 2025 - All Rights Reserved
+# This script is developed exclusively for non-commercial educational purposes.  
+# The Visual Hub. © 2025 - All Rights Reserved.
 import os
 import time
 import shutil
