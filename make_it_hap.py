@@ -5,7 +5,8 @@
 # !! You need ChimeraX installed and sourced in the .bashrc (Linix) or .bash_profile (Mac) !!
 # For improvements, consider using NumPy to calculate segment boundaries based on the total sequence length (n):
 # e.g. split_points = np.linspace(1, n + 1, num_segments + 1, dtype=int) ...
-# Created by Gleb Novikov. All rights reserved.
+# This script is developed exclusively for non-commercial educational purposes.  
+# The Visual Hub. © 2025 - All Rights Reserved.
 from chimerax.core.commands import run
 import random
 
