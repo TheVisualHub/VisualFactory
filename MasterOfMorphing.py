@@ -8,8 +8,8 @@
 #
 # (+) feel free to design your alternative strategies for structure preparation (+)
 # Current version implements three different strategies
-# Developed and benchmarked by Gleb Novikov
-# The VisualHub. All Rights Reserved (c) 2025
+# This script is developed exclusively for non-commercial educational purposes.  
+# The Visual Hub. © 2025 - All Rights Reserved.
 import numpy as np
 from chimerax.core.commands import run
 
