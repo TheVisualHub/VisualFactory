@@ -13,7 +13,8 @@ The current folder contains both the latest (fourth) and previous (third) revisi
 
 ## 🚀 MAIN FEATURES
 
-- **🧠 Four smoothing strategies**  
+- **🧠 Four smoothing strategies**
+
 1️⃣ **Manual Smooth** – Take full control! Set your own smoothing window for each trajectory and fine-tune the motion exactly how you wish!
 
 2️⃣ **Automatic Smooth** – Let it roll on its own: smooth factor = 2 × model ID. Want it softer or sharper? Just tweak the multiplier and go!
