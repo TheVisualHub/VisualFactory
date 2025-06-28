@@ -1,4 +1,4 @@
-👑 UltimateSmoothMD4.py 👑 
+👑 UltimateSmoothMD4.py 👑  
 🎬 Cutting-Edge Smoothing for Your MD Trajectories — Powered by ChimeraX 🐍
 ========================================================================
 ## 🔥 Video tutorial 🔥: https://youtu.be/PmYpPBrRaw8
