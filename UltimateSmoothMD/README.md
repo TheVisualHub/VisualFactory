@@ -11,13 +11,14 @@ This script provides a suite of **FOUR** smoothing strategies to create visually
 The current folder contains both the latest (fourth) and previous (third) revisions of the script — that has already powered numerous Hollywood-quality molecular films. 🏆
 ---
 
-## 🚀 Features
+## 🚀 MAIN FEATURES
 
-- **Four smoothing strategies**  
-  1. **Manual**: User‑defined windows per trajectory  
-  2. **Automatic**: Window size = 2 × model ID  
-  3. **Adaptive**: Window size scales with trajectory length  
-  4. **Stochastic** (default): “Casino‑style” random window selection, inspired by casino. 🎲
+- **🧠 Four smoothing strategies**  
+  1️⃣ **Manual Smooth** – Take full control! Set your own smoothing window for each trajectory and fine-tune the motion exactly how you wish!
+  2️⃣ **Automatic Smooth** – Let it roll on its own: smooth factor = 2 × model ID. Want it softer or sharper? Just tweak the multiplier and go!
+  3️⃣ **Adaptive Smooth**: Window size scales according to the number of snapshots in the trajectories  
+  4️⃣ **Stochastic Smooth** (default): “Casino‑style” random window selection 🎲 This strategy introduces a "smart randomness" concept, inspored mainly by principles seen in casino games and poker decision-making, where small corrections (0 or +/- 1) are more likely, mimicking conservative choices in risk-based games. Occasionally, the algorithm introduces a small "bluff" or edge for models with mid-range IDs (like poker players pushing for unexpected moves), adding further variability to the smoothing factors.
+  
 - **Pluggable**: Apply to any number of loaded MD trajectories  
 - **Real‑time feedback** via `session.logger.status`  
 - **Modular** structure (`smooth_windows`, `smooth_models`, `run_smoothing`)  
