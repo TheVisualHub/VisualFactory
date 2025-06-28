@@ -14,10 +14,14 @@ The current folder contains both the latest (fourth) and previous (third) revisi
 ## 🚀 MAIN FEATURES
 
 - **🧠 Four smoothing strategies**  
-  1️⃣ **Manual Smooth** – Take full control! Set your own smoothing window for each trajectory and fine-tune the motion exactly how you wish!
-  2️⃣ **Automatic Smooth** – Let it roll on its own: smooth factor = 2 × model ID. Want it softer or sharper? Just tweak the multiplier and go!
-  3️⃣ **Adaptive Smooth**: Window size scales according to the number of snapshots in the trajectories  
-  4️⃣ **Stochastic Smooth** (default): “Casino‑style” random window selection 🎲 This strategy introduces a "smart randomness" concept, inspored mainly by principles seen in casino games and poker decision-making, where small corrections (0 or +/- 1) are more likely, mimicking conservative choices in risk-based games. Occasionally, the algorithm introduces a small "bluff" or edge for models with mid-range IDs (like poker players pushing for unexpected moves), adding further variability to the smoothing factors.
+1️⃣ **Manual Smooth** – Take full control! Set your own smoothing window for each trajectory and fine-tune the motion exactly how you wish!
+
+2️⃣ **Automatic Smooth** – Let it roll on its own: smooth factor = 2 × model ID. Want it softer or sharper? Just tweak the multiplier and go!
+
+3️⃣ **Adaptive Smooth**: Window size scales according to the number of snapshots in the trajectories.
+
+4️⃣ **Stochastic Smooth** (default): “Casino‑style” random window selection 🎲 This strategy introduces a "smart randomness" concept, inspired mainly by principles seen in casino games and poker decision-making, where small corrections (0 or +/- 1) are more likely, mimicking conservative choices in risk-based games. Occasionally, the algorithm introduces a small "bluff" or edge for models with mid-range IDs (like poker players pushing for unexpected moves), adding further variability to the smoothing factors.
+
   
 - **Pluggable**: Apply to any number of loaded MD trajectories  
 - **Real‑time feedback** via `session.logger.status`  
