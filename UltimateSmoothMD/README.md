@@ -8,7 +8,7 @@
 **Last updated:** 27 May 2025  
 
 This script provides a suite of **FOUR** smoothing strategies to create visually coherent visualization of MD trajectories operating within the python intephace of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The created smoothed coordinates are not suitable for commercial applications.
-The current folder contains both the latest (fourth) and previous (third) revisions of the script — that has already powered numerous Hollywood-quality molecular films. 🏆
+The current folder contains the latest (fourth) revision of the script. 🏆
 ---
 
 ## 🚀 MAIN FEATURES
