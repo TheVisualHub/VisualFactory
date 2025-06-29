@@ -24,4 +24,4 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 
 ## 🐍 Example Use Case
 
-In most cases you just need drag and drop the script on the GUI or run script with chimeraX in terminal (for batch execution).
+No installation required: in most cases, simply drag and drop the script onto the ChimeraX GUI, or run it via the terminal with chimeraX for batch execution.
