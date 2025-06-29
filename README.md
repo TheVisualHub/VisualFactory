@@ -1,6 +1,6 @@
 # 🎨 FisualFactory
 
-**FisualFactory** is a creative arsenal of high-impact scripts dedicated to **cinematic 3D visualization and molecular graphics**. Most of scripts are designed to operate within the internal Python environemnt of **ChimeraX**.
+Welcome to the **FisualFactory** - a creative arsenal of high-impact scripts crafted for **cinematic 3D visualization and molecular graphics**. Most of scripts are designed to operate within the internal Python environemnt of **ChimeraX**.
 
 🔭 These tools leverage cutting-edge visual technologies to create data-informed visualizations of molecular word. 🧬
 
