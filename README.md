@@ -11,7 +11,7 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 🎞️ **Built for ChimeraX**  
   Scripts are optimized to oriduce high-quality rendering and data handling (e.g. operating with infinite number of molecular dynamics trajectories), using GUI or in batch (non-GUI).
 
-🎲 **Stochastic Visualization Strategy**  
+🎲 **Harnessing the principles of Stochastisity**  
   Some scripts impmement a **"Casino-style"** approach, adding a unique flavor of controlled randomness to the parameters of main functions, **Adding a "bluff" boost**, injecting occasional visual variability for creative representation.
 
 🤖 **Smart Feedback**  
