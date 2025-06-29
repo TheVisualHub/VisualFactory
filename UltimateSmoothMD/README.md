@@ -2,7 +2,10 @@
 🎬 Cutting-Edge Smoothing for Your MD Trajectories — Powered by UCSF ChimeraX 🐍
 ========================================================================
 ## 🔥 Video tutorial 🔥: 
-[![Watch the demo](https://img.youtube.com/vi/PmYpPBrRaw8/0.jpg)](https://www.youtube.com/watch?v=PmYpPBrRaw8)
+<h3>🎥 Watch the Demo</h3>
+<a href="https://www.youtube.com/watch?v=PmYpPBrRaw8" target="_blank">
+  <img src="https://img.youtube.com/vi/PmYpPBrRaw8/0.jpg" alt="Watch the demo" width="640" height="360">
+</a>
 ========================================================================
 
 **Version:** rev 4.00 alpha  
