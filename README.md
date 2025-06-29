@@ -15,13 +15,13 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
   Some scripts impmement a **"Casino-style"** approach, adding a unique flavor of controlled randomness to the parameters of main functions, **Adding a "bluff" boost**, injecting occasional visual variability for creative representation.
 
 🤖 **Smart Feedback**  
-  Most scripts offer **intuitive console outputs** and **support headless (in no-GUI mode with LINUX)** execution — that is great for automated pipelines and integration into your custom visual workflows.
+  Most scripts offer **intuitive console outputs** and **support headless (in no-GUI mode with LINUX)** execution — great for automated pipelines and integration into your custom visual workflows.
 
 🎥 **Multiple Visualization Modes**  
-  Easily switch between **stochastic**, **fixed**, or **gradient-based** visualization strategies, adaptable for various experimental needs.
+  Seamlessly transition between visualization modes — each unveiling deeper, distinct layers of molecular truth. 🔮
 
 ---
 
-## 🔮 🐍 Example Use Case
+## 🐍 Example Use Case
 
-In most cases you just need drag and drop the script on the GUI or run script with chimeraX in terminal (for batch execution)
+In most cases you just need drag and drop the script on the GUI or run script with chimeraX in terminal (for batch execution).
