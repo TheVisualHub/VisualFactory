@@ -1,3 +1,6 @@
+[![Watch the demo](https://img.youtube.com/vi/ZdGxwgnkfok/0.jpg)](https://www.youtube.com/watch?v=ZdGxwgnkfok)
+
+
 # 🎨 VisualFactory
 
 Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts crafted for **cinematic 3D visualization and molecular graphics**. Most of the algorithms are designed to operate within the internal Python environemnt of **ChimeraX**.
