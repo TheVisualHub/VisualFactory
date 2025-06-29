@@ -20,11 +20,14 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 🤖 **Smart Feedback**  
   Most scripts offer **intuitive console outputs** and **support headless (in no-GUI mode with LINUX)** execution — great for automated pipelines and integration into your custom visual workflows.
 
-🎥 **Multiple Visualization Modes**  
+🎞️ **Multiple Visualization Modes**  
   Seamlessly transition between visualization modes — each unveiling deeper, distinct layers of molecular truth. 🔮
 
 ---
 
-## 🐍 Example Use Case
+## 🎥 Example Use Case
 
-No installation required: in most cases, simply drag and drop the script onto the ChimeraX GUI, or run it via the terminal with chimeraX for batch execution.
+No installation required: in most cases, simply drag and drop the script onto the ChimeraX GUI, or run it via the terminal with chimeraX for batch execution. And prepare to unveil the things beneath the surface!
+
+![Visual Factory Logo](https://github.com/TheVisualHub/logo-images/raw/main/visualfactory_logo1.png)
+
