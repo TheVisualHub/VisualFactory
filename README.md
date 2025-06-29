@@ -29,4 +29,4 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 
 No installation required: in most cases, simply drag and drop the script onto the ChimeraX GUI, or run it via the terminal with chimeraX for batch execution. And prepare to unveil the things beneath the surface!
 
-![Visual Factory Logo](https://github.com/TheVisualHub/VisualFactory/assets/visualfactory_logo1.png)
+![Visual Factory Logo](https://github.com/TheVisualHub/VisualFactory/blob/9161b4510781c1b1d1eed8a22cfde9c4526c9fd0/assets/visualfactory_logo1.png)
