@@ -1,4 +1,4 @@
-[![Watch the demo](https://img.youtube.com/vi/ZdGxwgnkfok/0.jpg)](https://www.youtube.com/watch?v=ZdGxwgnkfok)
+[![Watch the video](https://img.youtube.com/vi/ZdGxwgnkfok/maxresdefault.jpg)](https://www.youtube.com/watch?v=ZdGxwgnkfok)
 
 
 # 🎨 VisualFactory
