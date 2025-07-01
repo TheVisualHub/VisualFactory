@@ -8,6 +8,12 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 🔭 These tools leverage cutting-edge technologies to create data-informed representations of molecular word. 🧬
 
 ---
+## ⚖️ ETHICAL USE POLICY
+
+_All scripts, llustrative materials, and tools provided here are strictly for **educational & academic use only**._  
+Please use them responsibly and uphold the highest standards of scientific integrity and ethics.  
+
+---
 
 ## 🚀 Features
 
