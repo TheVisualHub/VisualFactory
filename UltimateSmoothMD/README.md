@@ -1,15 +1,16 @@
 👑 UltimateSmoothMD4.py 👑  
 🎬 Cutting-Edge Smoothing for Your MD Trajectories — Powered by UCSF ChimeraX 🐍
 ========================================================================
-## 🔥 Video tutorial 🔥: 
+## 🔥 Click on the image below to watch the official video tutorial 🔥: 
 [![Watch the video](https://img.youtube.com/vi/PmYpPBrRaw8/maxresdefault.jpg)](https://www.youtube.com/watch?v=PmYpPBrRaw8)
 ========================================================================
+This script provides a suite of **FOUR** smoothing strategies to create visually coherent visualization of MD trajectories operating within the python intephace of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The created smoothed coordinates are not suitable for commercial applications. The current folder contains the latest revision. 🏆
+---
+## 🛠️ Usage
 
-**Version:** rev 4.00 alpha  
-**Last updated:** 27 May 2025  
+### 🖱️ Drag and Drop  
+Simply drag and drop the script file (`UltimateSmoothMD4.py`) into the **ChimeraX GUI** window.  
 
-This script provides a suite of **FOUR** smoothing strategies to create visually coherent visualization of MD trajectories operating within the python intephace of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The created smoothed coordinates are not suitable for commercial applications.
-The current folder contains the latest (fourth) revision of the script. 🏆
 ---
 
 ## 🚀 MAIN FEATURES
@@ -31,9 +32,10 @@ The current folder contains the latest (fourth) revision of the script. 🏆
 
 ---
 
-## 🛠️ Requirements
+## 🛠️ Requirements:
 
-- ChimeraX (any version)
+- **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/)** – Any recent version.
+- **NumPy** – Required for RMSD calculations and numerical operations (already included with ChimeraX).
 - Standard python libraries: `time`, `random`
 
 ---
