@@ -14,7 +14,7 @@ This script was developed and benchmarked by Gleb Novikov, building upon the coo
 The original innovations include:  
 1️⃣ Four distinct strategies to compute smooth factors  
 2️⃣ Adaptation to handle any number of molecular dynamics trajectories  
-2️⃣ Function-based code structure with real-time feedback  
+3️⃣ Function-based code structure with real-time feedback  
 
 ---
 ## 🛠️ Usage
