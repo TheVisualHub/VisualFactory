@@ -15,7 +15,7 @@
 ---
 ## 👤 Author
 
-This script was developed and benchmarked by **Gleb Novikov**.
+This script was developed and benchmarked by **Gleb Novikov**
 
 ---
 
