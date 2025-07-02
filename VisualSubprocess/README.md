@@ -12,17 +12,17 @@ This Python script is designed for structural biologists and bioinformatics prof
 ---
 ## 🎯 Key Features
 
-- 🧬 **Hidden Visual Subprocess:** Runs ChimeraX invisibly, no GUI popping up!  
+- 🐍 **Python Subprocess:** Runs ChimeraX without GUI on any OS!  
 - 🎨 **Custom Style Presets:** Antique white surfaces, royal blue cartoons, goldenrod atom highlights, and a smooth champagne background.  
-- 🧊 **Zoom & Resolution Controls:** Supports crisp 4K visuals (plus full HD, 2K, and 8K options).  
-- 🕹️ **Automated Cleanup:** Removes old visuals on demand, keeping your folders clean.  
-- 🧠 **Multiple Protein Structures:** Visualizes 14 selected receptors, from bovine rhodopsin 🐄 to squid rhodopsin 🦑 and more.
+- 🔎 **Zoom & Resolution Controls:** Supports crisp 4K visuals (plus full HD, 2K, and 8K options).  
+- 🧹 **Automated Cleanup:** Removes old visuals on demand, keeping your folders clean.  
+- 🧬 **Multiple Protein Structures:** Visualizes 14 selected receptors, from bovine rhodopsin 🐄 to squid rhodopsin 🦑 and more.
 
 ---
 ## ⚙️ How It Works
 
 1️⃣ **Cleanup:**  
-   - Deletes previously generated images from `TheVisualFolder2025` unless cleanup is disabled 🧹
+   - Deletes previously generated images from `TheVisualFolder2025` unless cleanup is disabled
 
 2️⃣ **Visual Generation:**  
    - Selects a random emoji to spice up logs  
