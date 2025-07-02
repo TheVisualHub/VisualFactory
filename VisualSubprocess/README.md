@@ -1,4 +1,4 @@
-## 🔮 Visual Subprosess: running hidden visualization session using phantom scripts 🐍💨  
+## 🔮 Visual Subprocess: Unveil Hidden Rendering Using Phantom Scripts 🐍💨  
 
 🎥 Click on the image to watch the video in 4K: 
 [![Watch Video](https://img.youtube.com/vi/VmdG7rC8WAk/maxresdefault.jpg)](https://youtu.be/VmdG7rC8WAk)
