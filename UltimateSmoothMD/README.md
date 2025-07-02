@@ -3,7 +3,7 @@
 [![Watch the video](https://img.youtube.com/vi/PmYpPBrRaw8/maxresdefault.jpg)](https://www.youtube.com/watch?v=PmYpPBrRaw8)
 
 ---
-This script provides a suite of **four** smoothing strategies to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
+This **UltimateSmoothMD4.py** script provides a suite of **four** smoothing strategies to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
 
 ---
 ## 🛠️ Usage
