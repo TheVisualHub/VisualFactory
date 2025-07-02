@@ -3,7 +3,18 @@
 [![Watch the video](https://img.youtube.com/vi/PmYpPBrRaw8/maxresdefault.jpg)](https://www.youtube.com/watch?v=PmYpPBrRaw8)
 
 ---
-This **UltimateSmoothMD4.py** script provides a suite of **four** smoothing strategies to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
+## 🔍 Overview
+
+The **UltimateSmoothMD4.py** script provides a suite of **four** smoothing strategies to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
+
+---
+## 👤 Author & Innovation
+
+This script was developed and benchmarked by Gleb Novikov, building upon the coordinate averaging method originally created by the ChimeraX team. 
+The original innovations include:  
+1️⃣ Four distinct strategies to compute smooth factors  
+2️⃣ Adaptation to handle any number of molecular dynamics trajectories  
+2️⃣ Function-based code structure with real-time feedback  
 
 ---
 ## 🛠️ Usage
