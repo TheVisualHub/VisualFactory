@@ -10,6 +10,12 @@
 This Python script is designed for structural biologists and bioinformatics professionals to launch **ChimeraX** as a subprocess, enabling the generation of high-quality molecular visualizations **without interrupting your primary workflow**. It produces detailed, publication-ready images of selected protein structures, incorporating customizable visual styles and controlled stochastic elements to introduce natural variability and enhance interpretability.
 
 ---
+## 👤 Author
+
+This script was developed and benchmarked by **Gleb Novikov**.
+
+---
+
 ## 🎯 Key Features
 
 - 🐍 **Python Subprocess:** Runs ChimeraX without GUI on any OS!  
