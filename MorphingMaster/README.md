@@ -12,6 +12,13 @@
 - Applies custom styling and visualization presets in ChimeraX
 - Directs your camera view right to the action
 
+---
+## 👤 Author
+
+This script was developed and benchmarked by **Gleb Novikov**.
+
+---
+
 ## ⚙️ Features
 
 - 🧠 **Strategy Selector**: Choose from `rmsd`, `chain`, or `none` for structural superimposition
