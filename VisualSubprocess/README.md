@@ -21,17 +21,17 @@ This Python script is designed for structural biologists and bioinformatics prof
 ---
 ## ⚙️ How It Works
 
-🧹 **Cleanup:**  
-   Deletes previously generated images from `TheVisualFolder2025` unless cleanup is disabled.
+1️⃣ **Cleanup:**  
+   - Deletes previously generated images from `TheVisualFolder2025` unless cleanup is disabled 🧹
 
-✨ **Visual Generation:**  
-   - Selects a random emoji to spice up logs 🎨  
+2️⃣ **Visual Generation:**  
+   - Selects a random emoji to spice up logs  
    - Builds a ChimeraX command script with your style options and output paths  
    - Runs ChimeraX subprocess silently with that script  
-   - Saves a timestamped PNG image in the output folder
+   - Saves a timestamped PNG image in the output folder 🎨
 
-🖼️ **Final Output:**  
-   A gallery of beautiful, high-res molecular images in your chosen folder.
+3️⃣ **Final Output:**  
+   - A gallery of beautiful, high-res molecular images in the chosen output folder 🖼️
 
 ---
 
