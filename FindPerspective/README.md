@@ -4,7 +4,7 @@
 🎥 Click on the image below to watch the demonstration:  
 [![Watch the video](https://img.youtube.com/vi/e1wDkbekEpw/maxresdefault.jpg)](https://youtu.be/e1wDkbekEpw)
 
-## A cinematic approach to molecular centroids: Automated 🧠 Precise 🎯 Beautiful 🌺
+## A cinematic approach to molecular centroids: Automated 🔮 Precise 🎯 Beautiful 🌺
 
 
 ## 🔍 Overview
