@@ -62,7 +62,13 @@ The script interfaces natively in python environemnt of ChimeraX, leveraging int
 
 ---
 
-🎥 Catching a good perspective is the cornerstone of molecular movie production and a catalyst for precision-driven innovations in biomedical imaging. This elegant technique ensures every molecular movement is captured from the most impactful viewpoints, unveiling the hidden beauty of molecular biology.
+🎥 Catching a good perspective is the cornerstone of molecular movie production and a catalyst for precision-driven innovations in biomedical imaging. This elegant technique ensures every molecular movement is captured from the most impactful viewpoints, unveiling the hidden beauty of molecular biology. In centroid computing, the center of geometry for a given atomic group is calculated by averaging the Cartesian coordinates of all atoms within the group. This provides a representative point that summarizes the spatial position of the atomic selection, enabling efficient tracking and visualization of molecular dynamics. Using such reference points, complex camera movements can be operated smoothly while keeping the key molecular features in clear focus.
+
+<p style="text-align: center;">
+  <a href="https://github.com/TheVisualHub/VisualFactory" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/TheVisualHub/VisualFactory/raw/5ed19c1f4dfe7983f5520caa603e464c47ab1e15/assets/perspective_logo1.jpeg" alt="VisualFactory Logo" style="max-width: 100%; height: auto;">
+  </a>
+</p>
 
 ---
 
