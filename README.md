@@ -13,7 +13,6 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 _All scripts, illustrative materials, and tools provided here are strictly for **educational,non-commercial & academic use only**._  
 Please use them responsibly and uphold the highest standards of scientific integrity and ethics.  
 This repository relies on UCSF ChimeraX, which is licensed under the [UCSF ChimeraX License](https://www.rbvi.ucsf.edu/chimerax/docs/license.html)
-Users must comply with ChimeraX’s license terms when using this software.
 
 
 ---
