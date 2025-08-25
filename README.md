@@ -10,7 +10,7 @@ Welcome to the **VisualFactory** - a creative arsenal of high-impact scripts cra
 ---
 ## ⚖️ ETHICAL USE POLICY
 
-_All scripts, illustrative materials, and tools provided here are strictly for **educational, non-commercial & academic use only**._  
+_All scripts and illustrative materials are strictly for **educational, non-commercial & academic use only**._  
 These scripts can be executed only with **UCSF ChimeraX**. ChimeraX is licensed separately under the [UCSF ChimeraX License](https://www.rbvi.ucsf.edu/chimerax/docs/license.html)
 Users must comply with the ChimeraX license when using these scripts. 
 Please use these materials responsibly and uphold the highest standards of scientific integrity and ethics.
