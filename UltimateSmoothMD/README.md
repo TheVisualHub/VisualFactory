@@ -1,4 +1,4 @@
-## 👑 UltimateSmoothMD4.py: a Cutting-Edge Engine for Smoothing Your MD Trajectories 🐍 ##  
+## 👑 UltimateSmoothMD5.py: a Cutting-Edge Engine for Smoothing Your MD Trajectories 🐍 ##  
 🎬 Click on the image below to watch the official video tutorial: 
 [![Watch the video](https://img.youtube.com/vi/PmYpPBrRaw8/maxresdefault.jpg)](https://www.youtube.com/watch?v=PmYpPBrRaw8)
 
@@ -11,7 +11,7 @@ The **UltimateSmoothMD5.py** provides a suite of **four** strategies for computi
 ## 👤 Author & Innovation
 
 This script was developed and benchmarked by Gleb Novikov, building upon the coordinate averaging method created by the ChimeraX team. The latest revision introduces HP smoothing via numpy + SciPy:
-1️⃣ Original HP smoothing function leveraging 1D convolution
+1️⃣ Original HP smoothing function leveraging *1D convolution*
 2️⃣ Four distinct strategies to compute smooth factors  
 3️⃣ Adaptation to handle any number of molecular dynamics trajectories  
 4️⃣ Function-based code with switchable booleans and real-time feedback  
@@ -42,13 +42,13 @@ Simply drag and drop the script file (`UltimateSmoothMD4.py`) into the **Chimera
 💬 **Real-time feedback** via `session.logger.status`  
 🧩 **Modular** structure (`smooth_windows`, `smooth_models`, `run_smoothing`)  
 
-
 ---
 
 ## 🛠️ Requirements:
 
 - **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/)** – Any recent version.
-- **NumPy** – Required for RMSD calculations and numerical operations (already included with ChimeraX).
+- **NumPy** – required for RMSD calculations and numerical operations (already included with ChimeraX).
+- **SciPy** - required for weighted averaging that slides (with hp_smooth = True)
 - Standard python libraries: `time`, `random`
 
 ---
