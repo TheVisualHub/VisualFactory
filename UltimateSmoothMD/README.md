@@ -10,8 +10,8 @@ The **UltimateSmoothMD5.py** provides a suite of **four** strategies for computi
 ---
 ## 👤 Author & Innovation
 
-This script was developed and benchmarked by Gleb Novikov, building upon the coordinate averaging method created by the ChimeraX team. The latest revision introduces HP smoothing via numpy + SciPy:
-1️⃣ Original HP smoothing function leveraging *1D convolution*
+This script was developed and benchmarked by Gleb Novikov, building upon the coordinate averaging method created by the ChimeraX team. The latest revision introduces HP smoothing combining Numpy with SciPy:  
+1️⃣ Original HP smoothing function leveraging 1D convolution  
 2️⃣ Four distinct strategies to compute smooth factors  
 3️⃣ Adaptation to handle any number of molecular dynamics trajectories  
 4️⃣ Function-based code with switchable booleans and real-time feedback  
