@@ -20,7 +20,7 @@ This script was developed and benchmarked by Gleb Novikov, building upon the coo
 ## 🛠️ Usage
 
 ### Option 1: 🖱️ Drag and Drop  
-Simply drag and drop the script file (`UltimateSmoothMD4.py`) into the **ChimeraX GUI** window.  
+Simply drag and drop the script file (`UltimateSmoothMD5.py`) into the **ChimeraX GUI** window.  
 ### Option 2: 🏃‍♂️ Execute in ChimeraX via `run` command
 `run UltimateSmoothMD4.py`
 
