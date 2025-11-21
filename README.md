@@ -20,7 +20,7 @@ Please use these materials responsibly and uphold the highest standards of scien
 ## 🚀 Features
 
 🎞️ **Built for ChimeraX**  
-  Scripts are optimized to oriduce high-quality rendering and data handling (e.g. operating with infinite number of molecular dynamics trajectories), using GUI or in batch (non-GUI).
+  Scripts are optimized to produce high-quality rendering and data handling (e.g. operating with infinite number of molecular dynamics trajectories), using GUI or in batch (non-GUI).
 
 🎲 **Harnessing the principles of Stochastisity**  
   Some scripts impmement a **"Casino-style"** approach, adding a unique flavor of controlled randomness to the parameters of main functions, **Adding a "bluff" boost**, injecting occasional visual variability for creative representation.
