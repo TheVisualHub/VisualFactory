@@ -5,7 +5,7 @@
 ---
 ## 🔍 Overview
 
-The **UltimateSmoothMD6.py** provides a suite of **four** strategies for computing smooth factors and *two* alternative smoothing algorithms to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
+The **UltimateSmoothMD6.py** provides a suite of **five** strategies for computing smooth factors and *four* alternative smoothing algorithms to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
 
 ---
 ## 👤 Author & Innovation
