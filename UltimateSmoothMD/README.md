@@ -43,7 +43,7 @@ Run the script with ChimeraX and pass flags directly:
 ChimeraX --script "/path/to/UltimateSmoothMD6.py --smooth_strategy 5 --smooth_mode adaptive"
 ```
 
-You can also omit arguments and simply drag-and-drop the script onto ChimeraX GUI. Additional examples:
+You can also omit arguments and simply drag-and-drop the script onto ChimeraX GUI:
 
 Example 1 — simple manual smooth strategy:
 ```text
