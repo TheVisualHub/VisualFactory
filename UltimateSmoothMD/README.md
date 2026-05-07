@@ -35,10 +35,29 @@ Then, load your structure with trajectory and run the following command:
 smoothmd smooth_strategy 5 smooth_mode adaptive
 ```
 
-You can also omit arguments and simply drag-and-drop the script onto ChimeraX GUI to use it with the defaults.
+### Option 2 — Terminal / headless execution
 
+Run the script with ChimeraX and pass flags directly:
+
+```text
+ChimeraX --script "/path/to/UltimateSmoothMD6.py --smooth_strategy 5 --smooth_mode adaptive"
+```
+
+You can also omit arguments and simply drag-and-drop the script onto ChimeraX GUI. Additional examples:
+
+Example 1 — simple manual smooth strategy:
+```text
+smoothmd smooth_strategy 1
+```
+Example 2 — RMSF strategy with Savitzky–Golay smoothing:
+```text
+smoothmd smooth_strategy 5 smooth_mode sg
+```
+Example 3 — Adaptive strategy with triangular HP smoothing:
+```text
+smoothmd smooth_strategy 3 smooth_mode hp
+```
 ---
-
 ## 🚀 MAIN FEATURES
 
 **Four smoothing strategies:**
@@ -51,7 +70,7 @@ You can also omit arguments and simply drag-and-drop the script onto ChimeraX GU
 
 4️⃣ **Stochastic Smooth** (default): “Casino‑style” random window selection 🎲 This strategy introduces a "smart randomness" concept, inspired mainly by principles seen in casino games and poker decision-making, where small corrections (0 or +/- 1) are more likely, mimicking conservative choices in risk-based games. Occasionally, the algorithm introduces a small "bluff" or edge for models with mid-range IDs (like poker players pushing for unexpected moves), adding further variability to the smoothing factors.
 
-5️⃣ **RMSF-Calibrated**: estimates a window size based on atomic fluctuations, mapping RMSF-like variation into a smoothing window.
+5️⃣ **RMSF-based Smooth**: estimates a window size based on atomic fluctuations, mapping RMSF-like variation into a smoothing window.
 
 ---
 
