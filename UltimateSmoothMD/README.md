@@ -5,30 +5,43 @@
 ---
 ## 🔍 Overview
 
-The **UltimateSmoothMD6.py** provides a suite of **five** strategies for computing smooth factors and *four* alternative smoothing algorithms to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision. 🏆
+The **UltimateSmoothMD6.py** provides a suite of **five** strategies for computing smooth factors and *four* alternative smoothing algorithms to create visually coherent visualizations of MD trajectories using the Python interface of **ChimeraX**. This tool is intended strictly for educational and personal purposes. The generated smoothed coordinates are **not suitable for commercial applications**. The current folder contains the latest revision:
+
+- **5 strategies** for choosing smoothing window sizes
+- **4 smoothing modes** for coordinate filtering
+- Support for **any number of loaded MD trajectories**
+- Both **ChimeraX GUI command usage** and **CLI / headless execution**
 
 ---
 ## 👤 Author & Innovation
 
-This script was developed and benchmarked by Gleb Novikov, building upon the coordinate averaging method created by the ChimeraX team. The latest revision introduces HP smoothing combining Numpy with SciPy:  
-1️⃣ Original HP smoothing function leveraging 1D convolution  
-2️⃣ Five distinct strategies to compute smooth factors  
-3️⃣ Adaptation to handle any number of molecular dynamics trajectories  
-4️⃣ Function-based code with switchable booleans and real-time feedback  
+Developed by **Gleb Novikov** and based on coordinate smoothing ideas used in ChimeraX.  
+Current script revision: **6.11 delta**.  
+Last updated: **07/05/2026**
 
 ---
 ## 🛠️ Usage
 
-### Option 1: 🖱️ Drag and Drop  
-Simply drag and drop the script file (`UltimateSmoothMD5.py`) into the **ChimeraX GUI** window.  
-### Option 2: 🏃‍♂️ Execute in ChimeraX via `run` command
-`run UltimateSmoothMD4.py`
+### Option 1 — ChimeraX GUI command bar
+
+First open the script (before parsing your trajectory) in ChimeraX:
+
+```text
+open /path/to/UltimateSmoothMD6.py
+```
+Then, load your structure with trajectory and run the following command:
+
+```text
+smoothmd smooth_strategy 5 smooth_mode adaptive
+```
+
+You can also omit arguments and simply drag-and-drop the script onto ChimeraX GUI to use it with the defaults.
 
 ---
 
 ## 🚀 MAIN FEATURES
 
-**🧠 Four smoothing strategies:**
+**Four smoothing strategies:**
 
 1️⃣ **Manual Smooth** – Take full control! Set your own smoothing window for each trajectory and fine-tune the motion exactly how you wish!
 
@@ -38,9 +51,19 @@ Simply drag and drop the script file (`UltimateSmoothMD5.py`) into the **Chimera
 
 4️⃣ **Stochastic Smooth** (default): “Casino‑style” random window selection 🎲 This strategy introduces a "smart randomness" concept, inspired mainly by principles seen in casino games and poker decision-making, where small corrections (0 or +/- 1) are more likely, mimicking conservative choices in risk-based games. Occasionally, the algorithm introduces a small "bluff" or edge for models with mid-range IDs (like poker players pushing for unexpected moves), adding further variability to the smoothing factors.
 
-🔌 **Pluggable**: Apply to any number of loaded MD trajectories  
-💬 **Real-time feedback** via `session.logger.status`  
-🧩 **Modular** structure (`smooth_windows`, `smooth_models`, `run_smoothing`)  
+5️⃣ **RMSF-Calibrated**: estimates a window size based on atomic fluctuations, mapping RMSF-like variation into a smoothing window.
+
+---
+
+**Smoothing Modes** - the latest revision provides four algorithms:
+
+1️⃣ **original** - original nested-loop weighted coordinate averaging.
+
+2️⃣ **hp** - Triangular convolution based on scipy.ndimage.convolve1d.
+
+3️⃣ **sg** - Savitzky–Golay filtering using scipy.signal.savgol_filter.
+
+4️⃣ **adaptive** - Gaussian iltering via scipy.ndimage.gaussian_filter1d.
 
 ---
 
@@ -49,7 +72,11 @@ Simply drag and drop the script file (`UltimateSmoothMD5.py`) into the **Chimera
 - **[ChimeraX](https://www.cgl.ucsf.edu/chimerax/)** – Any recent version.
 - **NumPy** – required for RMSD calculations and numerical operations (already included with ChimeraX).
 - **SciPy** - required for weighted averaging that slides (with hp_smooth = True)
-- Standard python libraries: `time`, `random`
+- Standard Python libraries:
+  - `time`
+  - `random`
+  - `argparse`
+  - `sys`
 
 ---
 
